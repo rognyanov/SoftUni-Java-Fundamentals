@@ -9,6 +9,9 @@ public class Main {
 		
 		Integer hours = scanner.nextInt();
 		Integer minutes = scanner.nextInt();
+		
+		scanner.close();
+		
 		String timeString = String.format("%02d:%02d", hours, minutes);
 				
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
