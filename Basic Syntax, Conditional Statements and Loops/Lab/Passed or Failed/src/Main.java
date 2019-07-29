@@ -6,6 +6,8 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		Double grade = scanner.nextDouble();
 		
+		scanner.close();
+		
 		if(grade>=3) {
 			System.out.println("Passed!");
 		} else {
