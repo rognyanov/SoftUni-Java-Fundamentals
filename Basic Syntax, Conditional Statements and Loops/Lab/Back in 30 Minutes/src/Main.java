@@ -19,7 +19,7 @@ public class Main {
 		LocalTime dt = LocalTime.parse(timeString, formatter);
 		dt = dt.plusMinutes(30);
 				
-		String result = dt.format(formatter);
+		String result = String.format("%d:%02d", dt.getHour(), dt.getMinute());
 		
 		System.out.println(result);
 	}
