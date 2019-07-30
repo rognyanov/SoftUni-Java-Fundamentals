@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Main {
 
@@ -10,7 +11,17 @@ public class Main {
 			put("Argentina", "Spanish");
 			put("Mexico", "Spanish");
 		}};
-
+		
+		Scanner scanner = new Scanner(System.in);
+		String countryName = scanner.nextLine();
+		
+		scanner.close();
+		
+		if(languages.containsKey(countryName)) {
+			System.out.println(languages.get(countryName));
+		} else {
+			System.out.println("unknown");
+		}
 	}
 
 }
