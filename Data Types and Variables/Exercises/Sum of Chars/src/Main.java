@@ -12,6 +12,8 @@ public class Main {
 			sum+=newChar;
 		}
 		
+		sc.close();
+		
 		System.out.printf("The sum equals: %d", sum);
 	}
 
