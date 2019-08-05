@@ -8,7 +8,7 @@ public class Main {
 		scanner.close();
 
 		long vowelsCount = getVolewsCount(line);
-
+		
 		System.out.println(vowelsCount);
 	}
 
@@ -16,10 +16,10 @@ public class Main {
 		long vowelsCount = line
 				.toLowerCase()
 				.chars()
-				.mapToObj(c -> (char) c)
+				.mapToObj(c->(char)c)
 				.filter(c -> "aeiou".contains(String.valueOf(c)))
 				.count();
-
+		
 		return vowelsCount;
 	}
 
