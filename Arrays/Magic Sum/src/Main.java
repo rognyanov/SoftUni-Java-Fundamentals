@@ -10,6 +10,8 @@ public class Main {
 				.boxed()
 				.toArray(Integer[]::new);
 		
+		scanner.close();
+		
 		Integer wantedSum = Integer.parseInt(scanner.nextLine());
 		
 		scanner.close();
